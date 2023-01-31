@@ -3,6 +3,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
+  // Create app instance from root module
   const app = await NestFactory.create(AppModule);
   const swaggerConfig = new DocumentBuilder()
     .setTitle('Median')
